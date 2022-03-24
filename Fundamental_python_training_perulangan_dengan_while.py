@@ -1,24 +1,24 @@
 """
 This is python code for looping "Read book" dengan while
 """
-jumlah_buku = 10
+book_count = 10
 print('Perintah ibu,"Baca semua buku hingga paham"')
-total_jumlah_baca = 0
+read_book = 0
 
-jumlah_buku_dibaca_dan_dipahami = 0
-print(f'Jumlah buku yang sudah dibaca dan di pahami {jumlah_buku_dibaca_dan_dipahami}')
+understood_count = 0
+print(f'Jumlah buku yang sudah dibaca dan di pahami {understood_count}')
 
-while total_jumlah_baca < jumlah_buku *2:
-    total_jumlah_baca = total_jumlah_baca + 1
-    if jumlah_buku_dibaca_dan_dipahami == 9:
-        print(f"buku ke {jumlah_buku_dibaca_dan_dipahami} belum pahami")
+while read_book < book_count *2:
+    read_book = read_book + 1
+    if understood_count == 9:
+        print(f"buku ke {understood_count} belum pahami")
     else:
-        jumlah_buku_dibaca_dan_dipahami = jumlah_buku_dibaca_dan_dipahami + 1
-        print(f"buku ke {jumlah_buku_dibaca_dan_dipahami} sudah di baca dan dipahami")
+        understood_count = understood_count + 1
+        print(f"buku ke {understood_count} sudah di baca dan dipahami")
 
-if jumlah_buku_dibaca_dan_dipahami == jumlah_buku:
+if understood_count == book_count:
     print('Bu, Semua buku sudah dibaca dan di pahami')
 else:
     print(f'tidak semua buku sudah di pahami.'
-          f' anak hanya bisa memahami {jumlah_buku_dibaca_dan_dipahami}')
+          f' anak hanya bisa memahami {understood_count}')
 # print(f'Jumlah buku yang sudah dibaca dan dipahami {jumlah_buku_dibaca_dan_dipahami}')
