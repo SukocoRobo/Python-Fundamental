@@ -56,3 +56,21 @@ for i in range(0, len(book_list)):
 
 print('\nBuku yang di ambil dari list')
 print(book)
+
+print('\nPerintah Del menghapus data list')
+book_list = ['Seven Habits','How to influence person','First thing first','4D-X']
+del book_list[1]
+for i in range(0, len(book_list)):
+    print(book_list[i])
+
+print('\nPerintah Del menghapus dengan list comprehension')
+book_list = ['Seven Habits','How to influence person','First thing first','4D-X']
+del book_list[:]
+for i in range(0, len(book_list)):
+    print(book_list[i])
+
+print('\nPerintah Del menghapus dengan list comprehension Start')
+book_list = ['Seven Habits','How to influence person','First thing first','4D-X']
+del book_list[0:3] # start:end //[0:-3] artinya menghapus dari data terakhir ke awal
+for i in range(0, len(book_list)):
+    print(book_list[i])
