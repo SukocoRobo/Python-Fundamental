@@ -74,3 +74,4 @@ book_list = ['Seven Habits','How to influence person','First thing first','4D-X'
 del book_list[0:3] # start:end //[0:-3] artinya menghapus dari data terakhir ke awal
 for i in range(0, len(book_list)):
     print(book_list[i])
+
